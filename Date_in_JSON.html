@@ -1,0 +1,10 @@
+<!-- There is no DATE datatyoe in JSON 
+Dates are usually stored as strings in ISO Format -->
+
+<script>
+const jsonDate = `{"orderDate":"2025-03-11T10:00:00Z"}`;
+const parseDate=JSON.parse(jsonDate);
+
+const x = new Date(parseDate.orderDate);
+console.log(x.toDateString())
+</script>
